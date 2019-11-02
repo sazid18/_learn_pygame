@@ -1,0 +1,21 @@
+https://www.edureka.co/blog/pygame-tutorial#z1
+
+import pygame – This is of course needed to access the PyGame framework.
+
+pygame.init() – This initializes all the modules required for PyGame.
+
+pygame.display.set_mode((width, height)) – This will launch a window of the desired size. The return value is a Surface object which is the object you will perform graphical operations on.
+
+pygame.event.get() – This empties the event queue. If you do not call this, the windows messages will start to pile up and your game will become unresponsive in the opinion of the operating system.
+
+pygame.QUIT – This is the event type that is fired when you click on the close button in the corner of the window.
+
+pygame.display.flip() – PyGame is double-buffered so this swaps the buffers. All you need to know is that this call is required in order for any updates that you make to the game screen to become visible.
+
+As you can see there are 3 arguments:
+
+* The first argument is the surface instance to draw the rectangle to.
+
+* The second argument is the (red, green, blue) tuple that represents the color to draw with.
+
+* The third argument is a pygame.Rect instance. The arguments for this constructor are the x and y coordinates of the top left corner, the width, and the height. 
